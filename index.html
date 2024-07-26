@@ -12,16 +12,16 @@
     <!-- grid untuk menampilkan gambar -->
     <div class="row">
         <div class="column">
-            <img src="Ayaka 2.jpeg" alt="ayaka2" onclick="myFunction(this);">
+            <img src="Ayaka 2.jpeg" alt="ayaka2" style="width: 100%" onclick="myFunction(this);">
         </div>
         <div class="column">
-            <img src="Ayaka.jpeg" alt="ayaka" onclick="myFunction(this);">
+            <img src="Ayaka.jpeg" alt="ayaka" style="width: 100%" onclick="myFunction(this);">
         </div>
         <div class="column">
-            <img src="Yae Miko.jpg" alt="yaemiko" onclick="myFunction(this);">
+            <img src="Yae Miko.jpg" alt="yaemiko" style="width: 100%" onclick="myFunction(this);">
         </div>
         <div class="column">
-            <img src="Raiden.jpeg" alt="raiden" onclick="myFunction(this);">
+            <img src="Raiden.jpeg" alt="raiden" style="width: 100%" onclick="myFunction(this);">
         </div>
     </div>
 
@@ -30,13 +30,13 @@
         <!-- span close button -->
         <!-- fungsi onclik dibawah mengatur agar ketika diklik maka parent dari elemennya akan atur display none/ditutup.
          kemudian '&times;' merupakan representasi tanda silang di html-->
-        <span onclick="this.parentElement.style.display='none'" class="clossbtn">&times;</span>        
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>        
 
         <!-- expand image -->
-         <img id="expandImg" style="width: 100%;">
+        <img id="expandedImg" style="width:100%">
 
-         <!-- image text -->
-        <div id="imgtext"></div>
+        <!-- image text -->
+        <div id="imgText"></div>
     </div>
 </body>
 </html>

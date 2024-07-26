@@ -42,12 +42,12 @@ h1 {
 }
 
 /* expand img */
-#imgtext {
+#imgText {
     position: absolute;
     bottom: 15px;
-    left: 15px;
+    right: 125px;
     color: white;
-    font-size: 20px;
+    font-size: 3em;
 }
 
 .closebtn {
