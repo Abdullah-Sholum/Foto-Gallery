@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {                        
+    text-align: center;     /*atur align text ke tengah*/
+}
+
+/* grid yang mengambang sama besar bersebelahan */
+.column {
+    float: left;                    
+    width: 25%;
+    padding: 10px;
+}
+
+/* style gambar dalam grid */
+.column img {
+    width: 100%;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* container expand */
+.container {
+    position: relative;
+    display: none;
+}
+
+/* expand img */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
