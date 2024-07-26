@@ -9,5 +9,38 @@
 </head>
 <body>
     <h1>Image Galery</h1>
+    <!-- grid untuk menampilkan gambar -->
+    <div class="row">
+        <div class="column">
+            <img src="Ayaka 1.jpeg" alt="ayaka1" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="Ayaka 2.jpeg" alt="ayaka2" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="Ayaka.jpeg" alt="ayaka" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="Ayaka 1.jpeg" alt="ayaka1" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="Yae Miko.jpg" alt="yaemiko" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+            <img src="Raiden.jpeg" alt="raiden" onclick="myFunction(this);">
+        </div>
+    </div>
+
+    <!-- container untuk melakukan expand image -->
+    <div class="container">
+        <!-- span close button -->
+        <span onclick="this.parentElement.style.display='none'" class="clossbtn">&times;</span>
+
+        <!-- expand image -->
+         <img id="expandImg" style="width: 100%;">
+
+         <!-- image text -->
+        <div id="imgtext"></div>
+    </div>
 </body>
 </html>
